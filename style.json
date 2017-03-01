@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "{} shades of gray}",
+  "name": "Several Shades of Gray",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -1679,7 +1679,7 @@
       },
       "paint": {
         "text-halo-width": 1.4,
-        "text-halo-color": "hsla(228, 60%, 21%, 0.7)",
+        "text-halo-color": "rgba(97, 97, 97, 1)",
         "text-color": {
           "base": 1,
           "stops": [
