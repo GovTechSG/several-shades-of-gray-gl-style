@@ -908,7 +908,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 11,
+      "minzoom": 10,
       "maxzoom": 24,
       "filter": [
         "all",
@@ -1845,6 +1845,59 @@
             ]
           ]
         }
+      }
+    },
+    {
+      "id": "bus-point",
+      "type": "circle",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 15,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "bus"
+        ]
+      ],
+      "layout": {},
+      "paint": {
+        "circle-color": "rgba(136, 135, 135, 1)",
+        "circle-radius": 2
+      }
+    },
+    {
+      "id": "bus-text",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 15,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "bus"
+        ]
+      ],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": [
+          "Metropolis Extra Light Italic",
+          "Klokantech Noto Sans Italic"
+        ],
+        "text-size": 7,
+        "text-allow-overlap": false,
+        "text-offset": [
+          0,
+          1.5
+        ]
+      },
+      "paint": {
+        "text-color": "rgba(129, 129, 129, 1)"
       }
     }
   ],
